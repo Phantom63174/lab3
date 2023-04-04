@@ -1,1 +1,2 @@
-https://images-ext-1.discordapp.net/external/MB-d5qeWIYpAnn2sCUEI7fAb3Y8PtHE7AO0tGFE4M14/https/media.tenor.com/_zDPceVBJtIAAAPo/kiss-ass.mp4
+![image](https://user-images.githubusercontent.com/127392217/229914475-936659ac-ac92-42f5-a290-d2e31662072c.png)
+
