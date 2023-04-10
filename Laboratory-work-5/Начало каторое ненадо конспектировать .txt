@@ -1,0 +1,127 @@
+2.1.1: ping 46.175.148.116
+Вот пример того что должно вам вывести после команды:
+
+Pinging 46.175.148.116 with 32 bytes of data:
+Reply from 46.175.148.116: bytes=32 time=49ms TTL=52
+Reply from 46.175.148.116: bytes=32 time=49ms TTL=52
+Reply from 46.175.148.116: bytes=32 time=50ms TTL=52
+Reply from 46.175.148.116: bytes=32 time=49ms TTL=52
+
+Ping statistics for 46.175.148.116:
+    Packets: Sent = 4, Received = 4, Lost = 0 (0% loss),
+Approximate round trip times in milli-seconds:
+    Minimum = 49ms, Maximum = 50ms, Average = 49ms
+
+2.1.2: ssh логин@46.175.148.116 ,потом вас попросят вести пароль, когда вы вставите пароль он будет не виден это нормально.
+Вот что должно вам вывести после команды:
+
+The authenticity of host '46.175.148.116 (46.175.148.116)' can't be established.
+ED25519 key fingerprint is SHA256:VpRxrk0phcA0oH/qWgKFPVvA9PF13KUk0c8EebaaOfE.
+This key is not known by any other names.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? yes (тут надо написать yes)
+Warning: Permanently added '46.175.148.116' (ED25519) to the list of known hosts.
+lyaskovskij@46.175.148.116's password: (тут надо вести пароль)
+Web console: https://vps6iefe.s-host.host:9090/ or https://46.175.148.116:9090/
+
+2.1.3: pwd 
+Вот пример того что должно вам вывести после команды:
+
+/home/lyaskovskij
+
+2.1.4: git config --global user.name "назва GitHub-користувача"
+       git config --global user.email E-mail GitHub-користувача 
+
+2.1.5: ssh-keygen
+Вот пример того что должно вам вывести после команды:
+
+Generating public/private rsa key pair.
+Enter file in which to save the key (/home/lyaskovskij/.ssh/id_rsa):
+Enter passphrase (empty for no passphrase): (тут нужно указать пароль)
+Enter same passphrase again: (тут нужно павторить пароль)
+Your identification has been saved in /home/lyaskovskij/.ssh/id_rsa.
+Your public key has been saved in /home/lyaskovskij/.ssh/id_rsa.pub.
+The key fingerprint is:
+SHA256:LfbN67oOYiejiSl/HuBWXvf7xRxsBHtcujF2VY3sDKw lyaskovskij@vps6iefe.s-host.host
+The key's randomart image is:
++---[RSA 3072]----+
+|           ... .*|
+|            o+ooo|
+|           ..+O .|
+|         .E  =o= |
+|  . . . S .   =  |
+| . + . o + o + . |
+|  o o = o o o +  |
+|.. o.= = . . o   |
+| o+o+    .==+    |
++----[SHA256]-----+
+
+2.1.6: cat (путь до файла id_rsa.pub) 
+Вот пример того что должно вам вывести после команды:
+
+ssh-rsa AAAAB3NzaC1yc2EAAAADAQABAAABgQDmkeiA9ioOVMDwR+eM8oOoHnpXGE+P58oS97XiP0gCZCGYbPBTb0XAJJCr3u64FVGfoTLzHwpTSQu1bZA4dkkoO6WFqZ6xSfSy/18kVnDwioCG/yyf2+ibCZoNveS3rodwns9ZsEoEw4dt7xB9p7/kcMbXW+M/uuLqrS8zbGgPqoL9T7GAEJkcTYIS33v4T11KYubxsOZkhMb2y63QeEEJs0bLZvX6XyJbUbzI2tFoA+CxO0e0JYFRVL3SFH71fZjCXwk7fUdgX0UZuVffn1CnR3cWjHYnjpLW1O6j1cW+CLZl2unQuDHFfQb+w/Do5HxL85f1QYBD/rZUAxnxhmhqIySeCWiYg3RaeAlKFIX2nuHKNMQrmiYpMJzzxWOIvZycxRaAc2SSdzYuUnzKVn2/gmZDKoVQFVgOxH+L/agl83q5hThYiDJiIXXhKDJaU3xHMokKxB9U2R6sG2xYDIqYjR6qP+b+rsrUWvYAx+xC88C/t4wScKi6+29s9ktPi5k= lyaskovskij@vps6iefe.s-host.host
+
+2.1.7: git clone (тут надо вставить вашу сылку на github с ssh ключом) 
+Вот пример того что должно вам вывести после команды:
+
+Cloning into 'ai222-lyaskovskij'...
+The authenticity of host 'github.com (140.82.121.4)' can't be established.
+ECDSA key fingerprint is SHA256:p2QAMXNIC1TJYWeIOttrVc98/R1BUFWu3/LiyKgUfQM.
+Are you sure you want to continue connecting (yes/no/[fingerprint])? (тут надо написать yes)
+Warning: Permanently added 'github.com,140.82.121.4' (ECDSA) to the list of known hosts.
+Enter passphrase for key '/home/lyaskovskij/.ssh/id_rsa': (тут надо написать пароль от ssh ключей которій вы создади рание) 
+remote: Enumerating objects: 144, done.
+remote: Counting objects: 100% (144/144), done.
+remote: Compressing objects: 100% (119/119), done.
+remote: Total 144 (delta 53), reused 31 (delta 11), pack-reused 0
+Receiving objects: 100% (144/144), 845.80 KiB | 1.95 MiB/s, done.
+Resolving deltas: 100% (53/53), done.
+
+2.1.8: cd (название вашого git каталогу)
+git branch Laboratory-work-5 (створення нової гілки)
+git checkout Laboratory-work-5 (перехід до створеної гілки)
+mkdir Laboratory-work-5 (создаем новий каталог)
+cd Laboratory-work-5 (переходим до созданого каталогу)
+touch README.md (создаем файл)
+nano README.md (редачим файл)
+git add . 
+git commit -m 'Changed by local git'
+git push 
+Вот пример того что должно вам вывести после команды:
+
+[lyaskovskij@vps6iefe ~]$ cd ai222-lyaskovskij
+[lyaskovskij@vps6iefe ai222-lyaskovskij]$ git branch Laboratory-work-5
+[lyaskovskij@vps6iefe ai222-lyaskovskij]$ git checkout Laboratory-work-5
+Switched to branch 'Laboratory-work-5'
+[lyaskovskij@vps6iefe ai222-lyaskovskij]$ mkdir Laboratory-work-5
+[lyaskovskij@vps6iefe ai222-lyaskovskij]$ cd Laboratory-work-5
+[lyaskovskij@vps6iefe Laboratory-work-5]$ touch README.md
+[lyaskovskij@vps6iefe Laboratory-work-5]$ nano README.md
+[lyaskovskij@vps6iefe Laboratory-work-5]$ ^C
+[lyaskovskij@vps6iefe Laboratory-work-5]$ git add .
+[lyaskovskij@vps6iefe Laboratory-work-5]$ git commit -m 'Changed by local git'
+[Laboratory-work-5 7f0985b] Changed by local git
+ 1 file changed, 1 insertion(+)
+ create mode 100644 Laboratory-work-5/README.md
+[lyaskovskij@vps6iefe Laboratory-work-5]$ git push
+fatal: The current branch Laboratory-work-5 has no upstream branch.
+To push the current branch and set the remote as upstream, use
+
+    git push --set-upstream origin Laboratory-work-5
+
+[lyaskovskij@vps6iefe Laboratory-work-5]$ git push --set-upstream origin Laboratory-work-5
+Enter passphrase for key '/home/lyaskovskij/.ssh/id_rsa': (тут надо вести пароль от ваших ssh ключей)
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Compressing objects: 100% (3/3), done.
+Writing objects: 100% (4/4), 417 bytes | 417.00 KiB/s, done.
+Total 4 (delta 1), reused 0 (delta 0), pack-reused 0
+remote: Resolving deltas: 100% (1/1), completed with 1 local object.
+remote:
+remote: Create a pull request for 'Laboratory-work-5' on GitHub by visiting:
+remote:      https://github.com/oleksandrblazhko/ai222-lyaskovskij/pull/new/Laboratory-work-5
+remote:
+To github.com:oleksandrblazhko/ai222-lyaskovskij.git
+ * [new branch]      Laboratory-work-5 -> Laboratory-work-5
+Branch 'Laboratory-work-5' set up to track remote branch 'Laboratory-work-5' from 'origin'.
+
+
