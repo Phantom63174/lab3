@@ -1,0 +1,89 @@
+Начало: 
+1) ssh (логин)@46.175.148.116
+2) cd ai222-lyaskovskij
+3) git branch Laboratory-work-6
+4) git checkout Laboratory-work-6
+5) mkdir Laboratory-work-6
+6) cd Laboratory-work-6
+7) touch README.md
+   nano README.md 
+   (В текстовом редакторе вставляем этот текст в один ряд, после того как вставили текст нажмите сочетание клавиш CTRL+O и CTRL+X): ## Основи використання скриптової мови інтерпретатору оболонки командного рядку Unix-подібних ОС.
+8) git add .
+   git commit -m 'Changed by local git'
+   git push 
+
+2.1.1:
+  awk 'BEGIN{FS=":"} NR <= 109(тут напечатайте ваш номер + 100) && /^l(тут напишите первуу букву вашей фамилии на латинице)/ {print $5}' /etc/passwd
+
+Что команда должна вывести(в этом примере она вывела все фамилии на l):
+lp
+daemon account for libstoragemgmt
+ЛОПАТІНА
+ЛУЧЕНКО
+ЛЯСКОВСЬКИЙ
+
+2.1.2:
+nano script.sh
+
+(В текстовом редакторе вставляем этот текст, после того как вставили текст нажмите сочетание клавиш CTRL+O и CTRL+X):
+#!/bin/bash
+awk 'BEGIN{FS=":"} NR <= 109 && /^l/ {print $5}' /etc/passwd
+
+chmod +x script.sh
+
+sh script.sh
+
+Что команда должна вывести(в этом примере она вывела все фамилии на l):
+lp
+daemon account for libstoragemgmt
+ЛОПАТІНА
+ЛУЧЕНКО
+ЛЯСКОВСЬКИЙ
+
+2.2.1:
+touch (Тут нужно написать свою фамилию на латинице)OSParam.sh
+
+nano LyaskovskiyOSParam.sh
+(В текстовом редакторе вставляем этот текст, после того как вставили текст нажмите сочетание клавиш CTRL+O и CTRL+X):
+
+#!/bin/cash
+echo -n "Ведіть назву параметру пам'яті: "
+read SwapFree info(тут должен быть ваш параметр, который вы должны взять в таблице в номер 3 которая находиться в гугл документе)
+if [[ $SwapFree == "SwapFree" ]]; then
+   echo $(grep -w $SwapFree /proc/meminfo | uniq)
+   echo -e "$SwapFree - скільки вільної пам'яті в оперативній пам'яті системи"
+else
+   echo "Команда №1 не найдена."
+fi
+if [[ $info == "info" ]]; then
+   echo -e "$SwapFree - це параметр, який вказує, скільки вільної пам'яті в оперативній пам'яті системи не використовується для зберігання даних, винесених на жорсткий диск у вигляді сторінок підкачування"
+else
+   echo "Команда  №2  не найдена"
+fi
+
+2.2.2:
+
+sh LyaskovskiyOSParam.sh
+(Вас попросят вести ваш параметр и info)
+
+2.3.1
+
+nano my_delete_link.sh
+(В текстовом редакторе вставляем этот текст, после того как вставили текст нажмите сочетание клавиш CTRL+O и CTRL+X):
+(Для каждого варианто свое)
+
+#!/bin/cash
+echo -n "Введіть назву файлу для видалення:"
+read objectname
+if [[ $objectname =~ [0-9]{10,} ]] || [[ ${#objectname} -gt 13 ]]; then 
+    echo "Назва файлу не відповідає вказаному обмеженню"
+    exit 1
+fi
+if [[ -f "$objectname"]]; then
+    rm "$objectname"
+    echo "Файл \"$objectname\" успішно видален"
+else
+    echo "Такого файла не существует"
+fi
+
+
