@@ -53,7 +53,7 @@ int wait[NUM_TRANSACTIONS][2] = {{1}, {2, 3}};
 
 ### 2 Налаштування бази даних
 
-<img width="571" alt="image" src="https://github.com/oleksandrblazhko/ai222-rogova/assets/127392599/214f2854-0830-431b-91d0-413903e94476">
+![image](https://github.com/oleksandrblazhko/ai222-rogova/assets/127392599/214f2854-0830-431b-91d0-413903e94476)
 
 #### Рис 1 - 2.2.1 Встановити з’єднання з БД, назва якої співпадає з іменем вашого користувача
 в ОС Linux, використовуючи користувача СКБД за таким же іменем. ####
