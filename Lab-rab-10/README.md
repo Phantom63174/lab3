@@ -41,36 +41,36 @@ int wait[ ][ ] = { {2, 1},{2 , 1},{3,1},{2,2} };
 
 ### 2.2 Налаштування бази даних
 
-![image](https://github.com/oleksandrblazhko/ai222-turbarov/assets/127674749/5e6d0bd3-8518-4e17-94f0-0f061b92c5f6)
+![image](https://github.com/Phantom63174/lab3/assets/127674749/1190a5de-da21-4ae1-a8b0-037fa43c6635)
 
 рис 1 до завдання 2.2.1 Встановити з’єднання з БД, назва якої співпадає з іменем вашого користувача
 в ОС Linux, використовуючи користувача СКБД за таким же іменем.
 
-![image](https://github.com/oleksandrblazhko/ai222-turbarov/assets/127674749/8b89170d-c3a7-489e-a077-ee41fc0ec526)
+![image](https://github.com/Phantom63174/lab3/assets/127674749/dd4b821b-d677-46da-970c-61134dcd4f9d)
 
 рис 2 до завдання 2.2.2 Виконати команди отримання імені поточного користувача СКБД та назви БД.
 
-![image](https://github.com/oleksandrblazhko/ai222-turbarov/assets/127674749/c98f584e-16cd-4d3d-8585-3eb6ec7d23c0)
+![image](https://github.com/Phantom63174/lab3/assets/127674749/72cdff86-c98a-477d-af25-b36e838022c4)
 
 рис 3 до завдання 2.2.3 У відповідності із варіантом з таблиці 16 створити реляційну таблицю.
 
-![image](https://github.com/oleksandrblazhko/ai222-turbarov/assets/127674749/7b4615f9-3bba-459b-be67-88983a77c29a)
+![image](https://github.com/Phantom63174/lab3/assets/127674749/7058d53d-6a2a-4399-bde2-2929e484d28b)
 
 рис 4 до завдання 2.2.4 У відповідності із варіантом з таблиці 16 додати рядок в реляційну таблицю.
-![image](https://github.com/oleksandrblazhko/ai222-turbarov/assets/127674749/5a3b6759-b6a6-4629-88ff-fe0e167d4e4c)
+![image](https://github.com/Phantom63174/lab3/assets/127674749/c18412bb-6602-4f12-844f-1132fd575b47)
 
 рис 5 до завдання 2.2.5 Створити ще одну операцію внесення рядка в таблицю, який буде відрізнятися
 значеннями всіх змінних (стовпчиків) від прикладу з варіанту, а одна із змінних повинна
 враховувати значення із транслітерацією вашого прізвища.
 
-![image](https://github.com/oleksandrblazhko/ai222-turbarov/assets/127674749/9dc9e339-95cf-4869-9163-53f812adf0c3)
+![image](https://github.com/Phantom63174/lab3/assets/127674749/4d2d397b-eb9d-44e8-9317-394b7c105105)
 
 рис 6 до завдання 2.2.6 Переглянути зміст таблиці, враховуючи всі стовпчики всіх рядків таблиці.
 
 
 ### 2.3 Керування квазіпаралельним виконанням транзакцій з використанням команд блокування
 
-![image](https://github.com/oleksandrblazhko/ai222-turbarov/assets/127674749/f3270f85-a093-4405-93bd-6b1be4cdfd4f)
+![image](https://github.com/Phantom63174/lab3/assets/127674749/093124cf-91fd-4ed2-a0ff-087e15198bd2)
 
 Рис. 7 - фрагмент екрану з рiшення "2.3.1 Створити файл з назвою за шаблоном «ваше прізвище_transaction_lock_1.sql»,
 наприклад, blazhko_transaction_lock_1.sql, та додати до нього операції двох транзакцій,
@@ -82,27 +82,26 @@ int wait[ ][ ] = { {2, 1},{2 , 1},{3,1},{2,2} };
 - операція фіксації всіх виконаних операцій."
 
 
-![image](https://github.com/oleksandrblazhko/ai222-turbarov/assets/127674749/cfa018ae-cd88-492b-96ec-1be9116716d8)
+![image](https://github.com/Phantom63174/lab3/assets/127674749/3d35bb60-7238-4b15-9686-212a19ff9322)
 
 Рис. 8 - фрагмент екрану з рiшення "2.3.2 У двох псевдотерміналах виконати операції транзакцій при їх
 квазіпаралельному режимі роботи за умови, що одна з транзакція стартує першою."
 
 
-![image](https://github.com/oleksandrblazhko/ai222-turbarov/assets/127674749/134066ee-92d4-43d3-8308-20600fb2a641)
+![image](https://github.com/Phantom63174/lab3/assets/127674749/4cd0a033-0905-4dca-a3d8-e3cc5108d832)
 
 Рис. 9 - фрагмент екрану з рiшення "2.3.3 Повторити роботу транзакцій, але у першій транзакції замість операції
 фіксації виконати операцію відміни всіх операцій транзакції."
 
 
-
-![image](https://github.com/oleksandrblazhko/ai222-turbarov/assets/127674749/30b1c0d4-80f3-4e6f-aff2-c410030d964c)
+![image](https://github.com/Phantom63174/lab3/assets/127674749/57065b82-1dc9-46ed-938e-2cbde2e25f65)64c)
 
 Рис. 10 - фрагмент екрану з рiшення "2.3.4 Створити файл з назвою за шаблоном «ваше прізвище_transaction_lock_2.sql»,
 наприклад, blazhko_transaction_lock_2.sql, зі змістом файлу, створеного у пункті 2.3.1, але
 вже враховуючи протокол 2-го ступеня блокування."
 
 
-![image](https://github.com/oleksandrblazhko/ai222-turbarov/assets/127674749/28e2c59a-f275-4b1e-86a3-0803ff585eb4)
+![image](https://github.com/Phantom63174/lab3/assets/127674749/59a8b848-8723-4af9-a84f-cac13bd8fc4a)
 
 Рис. 11 - фрагмент екрану з рiшення "2.3.5 Повторити роботу транзакцій з використанням протоколу 2-го ступеня
 блокування, але з додатковим параметром NOWAIT."
@@ -112,14 +111,14 @@ int wait[ ][ ] = { {2, 1},{2 , 1},{3,1},{2,2} };
 ### 2.4 Керування квазіпаралельним виконанням транзакцій при наявності Deadlock-станів.
 
 
-![image](https://github.com/oleksandrblazhko/ai222-turbarov/assets/127674749/f75cab05-d716-4111-b6f7-092bca6bef48)
+![image](https://github.com/Phantom63174/lab3/assets/127674749/e9023dfe-97f4-4e13-9bff-61ab50d1bd58)
 
 Рис. 12 - фрагмент екрану з рiшення "2.4.1 Створити файл з назвою за шаблоном «ваше прізвище_deadlock.sql»,
 наприклад, blazhko_deadlock.sql, зі змістом файлу, створеного у пункті 2.3.1, але вже
 модифікованого так, щоб транзакції призводили до Deadlock-стану."
 
 
-![image](https://github.com/oleksandrblazhko/ai222-turbarov/assets/127674749/0989879e-8d85-4e68-8c34-66131de05457)
+![image](https://github.com/Phantom63174/lab3/assets/127674749/a5181b00-ef95-4bc7-8726-ba26dafe2d5b)
 
 ### Висновок: ми розробили програму, яка створює дві транзакції. Проте під час їх виконання виникла ситуація, відома як "deadlock" . Це означає, що коли обидва процеси очікують звільнення ресурсів, які потрібні один одному, вони блокуються взаємно. У такій ситуації ніякий з процесів не може продовжити свою роботу, доки не отримає доступ до ресурсів, які зараз заблоковані іншими процесами.
 
