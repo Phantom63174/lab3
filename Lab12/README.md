@@ -2,11 +2,11 @@
 
 ### 2.1 Використання черг повідомлень для процесів, які взаємодіють з однією БД під керуванням серверу СКБД PostgreSQL Забезпечити обмін повідомленням між двома процесами-копіями серверів СКБД PostgreSQL, використовуючи команду LISTEN для програми-споживача та команду NOTIFY для програми-постачальника через утиліту psql та враховуючи, що:
 
-![image](https://github.com/oleksandrblazhko/ai222-lyaskovskij/assets/127392217/746fc713-5d1b-41ef-82b8-128b11d51003)
+![2 1 2](https://github.com/Phantom63174/lab3/assets/127392217/5880ee50-d44a-43ec-91b1-b043a68c0604)
 
-![image](https://github.com/oleksandrblazhko/ai222-lyaskovskij/assets/127392217/b7f67df8-0c93-4fb0-a671-47fec378e52b)
+![2 1 3](https://github.com/Phantom63174/lab3/assets/127392217/11bdd840-9675-4a73-826a-8a9c4d28e3e9)
 
-![image](https://github.com/oleksandrblazhko/ai222-lyaskovskij/assets/127392217/bf4b0c5a-f8f9-4119-89fd-ddbb358a3340)
+![2 1 1](https://github.com/Phantom63174/lab3/assets/127392217/d532627b-f875-4489-9087-4699eb9c6fe0)
 
 назва черги повідомлень співпадає з вашим прізвищем в транслітерації,
 наприклад, blazhko;
@@ -19,7 +19,7 @@ Blazhko”;
 
 ### 2.2 Програмна реалізація неіменованих каналів.
 
-![image](https://github.com/oleksandrblazhko/ai222-lyaskovskij/assets/127392217/e975a672-7bcc-409d-8644-64622b18495c)
+![2 2 1](https://github.com/Phantom63174/lab3/assets/127392217/3a89caa9-3b9c-4ecb-9072-e2db3807788b)
 
 Рис.1-2.2.1 Створити програму на мові С з назвою pipe_read яка виконує дії:
  отримує повідомлення з неіменоваго каналу з використанням значення, яке
@@ -29,7 +29,7 @@ Blazhko”;
  виводить на екран повідомлення, в якому вказано розмір повідомлення,
 отриманого раніше з каналу.
 
-![image](https://github.com/oleksandrblazhko/ai222-lyaskovskij/assets/127392217/2f77718f-80b9-4642-8faf-849d6288f531)
+![2 2 2](https://github.com/Phantom63174/lab3/assets/127392217/8379552b-f2a4-434d-9f94-eebc0e0a2b4c)
 
 Рис.2-2.2.2 Створити програму на мові С з назвою pipe_write, яка виконує дії:
  створює неіменований канал;
@@ -41,7 +41,7 @@ Surname", наприклад, " The Laboratory Work of Blazhko";
 Surname with pid=", наприклад, " I`m parent process of Blazhko with pid=" зі значенням свого
 PID;
 
-![image](https://github.com/oleksandrblazhko/ai222-lyaskovskij/assets/127392217/10c39c9c-3417-4ae9-b1dd-128df4b0bfa3)
+![2 2 3](https://github.com/Phantom63174/lab3/assets/127392217/487c8452-d2f1-4641-98c8-e49dc365e9cc)
 
 Рис.3-2.2.3 Скомпілювати програми та перевірити їх роботу.
 Проаналізувати роботу програм та надати висновок щодо синхронності або
@@ -50,19 +50,19 @@ PID;
 
 ### 2.3 Робота з іменованими каналами через інтерпретатор командного рядку.
 
-![image](https://github.com/oleksandrblazhko/ai222-lyaskovskij/assets/127392217/fb6574bc-8e25-40f6-bc4b-39b2ad048be3)
+![2 3 1](https://github.com/Phantom63174/lab3/assets/127392217/c067510e-ff51-47b0-b706-1b9a9ee9509e)
 
 Рис.4-2.3.1 Створити іменований канал з використанням команди mkfifo:
  назва каналу співпадає з вашим прізвищем у транслітерації;
  права доступу до каналу = можна лише читати та писати власнику та групі
 власника.
 
-![image](https://github.com/oleksandrblazhko/ai222-lyaskovskij/assets/127392217/6bc50fae-e300-4dca-904a-ee4cdb6ca3e0)
+![2 3 2](https://github.com/Phantom63174/lab3/assets/127392217/c7f82cb3-7969-46ff-a153-3048c8617db0)
 
 Рис.5-2.3.2 Підключити до іменованого каналу процес, який буде в нього записувати за
 командою, визначеною з таблиці за вашим варіантом.
 
-![image](https://github.com/oleksandrblazhko/ai222-lyaskovskij/assets/127392217/833af14c-475f-47a6-b09d-93ca49764c98)
+![2 3 3](https://github.com/Phantom63174/lab3/assets/127392217/55d2fdcf-f6f1-43c6-a2a5-a7e7b667bb66)
 
 Рис.6-2.3.3 Перейти до нового (2-го) псевдотерміналу роботи з ОС Linux та створити
 процес, який буде читати зі створеного раніше каналу.
@@ -70,7 +70,7 @@ PID;
 асинхронності їх дій.
 Висновок: При виконанні команди cat, яка чекає на дані з іменованого каналу, і команди запису echo, яка записує дані до каналу, ви побачите, що процес читання (cat) зупиняється, доки не будуть наявні дані у каналі. Це означає, що процеси взаємодіють асинхронно: процес запису (echo) записує дані в канал, а процес читання (cat) чекає, поки дані з'являться у каналі для читання.
 
-![image](https://github.com/oleksandrblazhko/ai222-lyaskovskij/assets/127392217/4c641d77-b792-4b61-b1fb-f268a8d5da27)
+![2 3 4](https://github.com/Phantom63174/lab3/assets/127392217/edd17b00-9e09-4d49-a3e5-532c452c8f33)
 
 Рис.7-2.3.4 Видалити іменований канал.
 
